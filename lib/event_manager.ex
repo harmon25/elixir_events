@@ -7,7 +7,8 @@ defmodule EventManager do
   """
 
   @doc """
-    Default function launched by supervisor.
+  Default function launched by supervisor.
+  Returns pid of this process to monitor
   """
  def start_link() do
   {:ok, pid } = GenEvent.start_link(name: __MODULE__)

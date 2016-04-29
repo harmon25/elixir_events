@@ -19,5 +19,5 @@ EventEmitter.stop_timer
 EventEmitter.send_event "Sweet message"
 
 EventEmitter.emitted_events
-EventHandler.recieved_events
+EventHandler.received_events
 ```

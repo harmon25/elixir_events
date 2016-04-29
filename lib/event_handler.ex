@@ -9,7 +9,6 @@ defmodule EventHandler do
   use GenEvent
   require Logger
 
-
   def init(_args) do
     IO.puts "EventHandler initalized!"
     {:ok, [{:events, 0}]}
@@ -37,7 +36,7 @@ defmodule EventHandler do
     {:ok, num_events, [{:events, num_events}]}
   end
 
-  def recieved_events() do
+  def received_events() do
     GenEvent.call(EventManager, __MODULE__, :received_events)
   end
 
