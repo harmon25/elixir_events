@@ -4,20 +4,20 @@ A simple GenEvent tutorial to demonstrate the potential of OTP.
 
 # Usage
 Clone git repo 
-```
+```sh
 cd elixir_events
-#run tests
+# run tests
 mix test
 # launch shell, with ElixirEvents supervisor running
 iex -S mix
 ```
 # Example
-```
-EventEmitter.start_timer
-EventEmitter.stop_timer
+```elixir
+iex> EventEmitter.start_timer
+iex> EventEmitter.stop_timer
 
-EventEmitter.send_event "Sweet message"
+iex> EventEmitter.send_event "Sweet message"
 
-EventEmitter.emitted_events
-EventHandler.received_events
+iex> EventEmitter.emitted_events
+iex> EventHandler.received_events
 ```
